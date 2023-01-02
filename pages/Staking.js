@@ -1,14 +1,14 @@
 import { ConnectionContext } from '../context'
 import { useContext, React } from 'react'
-import Project from '../Components/Project';
+import Pool from '../Components/Pool';
 
-export default function Home() {
+export default function Staking() {
 
   const [connected, setConnected, provider, , address, setAddress, isChainCorrect] = useContext(ConnectionContext)
 
   if (connected) {
     return (
-      <Project/>
+      <Pool/>
     );
   }  
 }

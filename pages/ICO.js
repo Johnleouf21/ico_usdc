@@ -1,14 +1,14 @@
 import { ConnectionContext } from '../context'
 import { useContext, React } from 'react'
-import Project from '../Components/Project';
+import Ico from '../Components/Ico';
 
-export default function Home() {
+export default function ICO() {
 
   const [connected, setConnected, provider, , address, setAddress, isChainCorrect] = useContext(ConnectionContext)
 
   if (connected) {
     return (
-      <Project/>
+      <Ico/>
     );
   }  
 }

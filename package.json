@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.7.3",
+    "bootstrap": "^5.2.3",
     "dotenv": "^16.0.2",
     "next": "12.3.0",
     "react": "18.2.0",
+    "react-bootstrap": "^2.7.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {

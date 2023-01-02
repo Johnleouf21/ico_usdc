@@ -15,6 +15,31 @@ a {
   box-sizing: border-box;
 }
 
+.square {
+  display: flex; /* utilise flexbox pour organiser l'intérieur du carré */
+  flex-direction: column; /* organiser les éléments du carré en colonne */
+  width: fit-content;
+}
+
+.square-title {
+  background-color: rgb(37, 99, 235); /* change la couleur de fond en bleu */
+  color: white; /* change la couleur du texte en blanc */
+  padding: 5px; /* ajoute un peu de marge intérieure */
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.square-content {
+  flex: 1; /* étire l'élément pour remplir tout l'espace restant */
+  background-color: rgb(223, 223, 223);
+  color: rgb(0, 0, 0);
+  padding: 25px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: center
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
