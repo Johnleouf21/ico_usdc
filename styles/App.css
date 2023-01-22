@@ -1,0 +1,428 @@
+:root{
+  --yellow : #fbe31c;
+  --pink : #f22a83;
+  --light_yellow: #fff06b;
+  --background: #253b53;
+  --cardboard:#e5dca1;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body{
+  /* background-image: url('./Assets/Images/back\ layer\ -min.png'); */
+  background-color: var(--background) !important;
+  /* background-position: center; */
+}
+
+.App {
+  text-align: center;
+}
+
+.text{
+  font-family: MarkUp;
+}
+
+
+.outline{
+  border: 5px;
+  border-color: black;
+  border-style: solid;
+}
+
+/* navbar css */
+.navbarMain{
+background-color: transparent;
+}
+.navLogo{
+  width: 200px;
+  margin-left: 20px;
+}
+
+.inline{
+  display: inline-block;
+}
+
+.navConnectBtn{
+  background-color: var(--light_yellow) !important;
+  border: 3px solid var(--pink) !important;
+  color: black !important;
+  margin-right: 25px;
+  font-weight: bold !important;
+}
+
+.navConnectBtn2{
+  background-color: var(--light_yellow) !important;
+  border: 3px solid var(--pink) !important;
+  color: black !important;
+  margin-right: 25px;
+  font-weight: bold !important;
+}
+
+.navConnectBtn2::after,
+.navConnectBtn2::before {
+  position: absolute;
+  text-align: center;
+  color:  #fff9ce;
+  font-weight: bold;
+  line-height: 2.5;
+}
+
+.navConnectBtn2::before {
+  content: "Disconnect";
+  right: 25px;
+  top: -50px;
+}
+
+.navConnectBtn2.navConnectBtn2:hover::before {
+  top: 14px !important;
+  padding: 0 10px 0 10px !important;
+  background-color:rgb(32, 32, 32);
+  color:var(--yellow) !important;
+  border: 3px solid var(--pink) !important;
+  border-radius: 8px !important;
+  transform: scale(1.05);
+}
+
+.pinkBtn{
+  background-color: var(--pink) !important; 
+  border: 0 !important;
+  border-radius: 13px !important;
+}
+
+.greenBorder{
+  border: 3px solid rgb(2, 193, 2) !important;
+}
+
+/* navbar css */
+
+/* body */
+.bodyDiv{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+}
+.bodyTextDiv{
+  display: flex;
+  align-items: center;
+}
+.bodyText{
+  margin-left:'-320px'
+}
+.mintBtn{
+  background-color: var(--pink) !important;
+  border: 0 !important;
+  margin: 5px;
+}
+.notice{
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(248, 102, 126) !important;
+  border: solid 5px rgb(102, 153, 248);
+  margin: 10px auto 0 auto;
+}
+.mintStakeBtn{
+  background-color: rgb(102, 153, 248) !important;
+  border: 0 !important;
+}
+.eggHolder{
+  border: 2px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: rgb(0, 0, 0);
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  position:absolute;
+  background-color: transparent;
+}
+.viewEggHolder{
+  position: absolute;
+  border: 2px;
+  border-style: solid;
+  border-radius: 15px;
+  border-color:var(--yellow);
+  width: 300px;
+  height: 300px;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.viewSelectedPartsHolder{
+  position: absolute;
+  border: 2px;
+  border-style: solid;
+  border-radius: 15px;
+  border-color:var(--yellow);
+  width: 300px;
+  height: 300px;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* body */
+
+@font-face {
+  font-family: MarkUp;
+  src: url('/Assets/Fonts/Markup\ W00\ Regular.ttf');
+}
+
+@media (max-width: 768px){
+    .bodyDiv{
+      display: inline-block;
+      margin-top: 60px;
+    }
+    .bodyText{
+      margin-top: 50px;
+      margin-left: 0;
+    }
+}
+
+
+
+.partsHolder{
+  height:200px;
+  width: 200px;
+  border-radius: 15px;
+  margin: 5px;
+  background-color: rgb(255, 234, 186);
+  z-index: 1;
+}
+
+.viewPartsHolder{
+  height:80px;
+  width: 80px;
+  border-radius: 15px;
+  margin: 5px;
+  background-color: rgb(255, 234, 186);
+}
+
+.viewPartsScroll{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  white-space: nowrap;
+  width: 100%;
+  height: 80%;
+}
+
+.partsHolderStaked{
+  height:90px;
+  width: 90px;
+  border-radius: 15px;
+  margin: 5px;
+  background-color: rgb(255, 234, 186);
+  border: 5px;
+  border-color: black;
+  border-style: solid;
+}
+
+
+
+.selected{
+  border: 1px black solid;
+}
+
+.nooutline{
+  border:0px
+}
+
+.viewHeader{
+  position: relative;
+  margin-top: 40px;
+  background-color: var(--yellow);
+  border-radius: 15px;
+  width: 100%;
+  height: 135px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.viewHeader2{
+  position: relative;
+  margin-top: 40px;
+  background-color: #0066ff;
+  border-radius: 15px;
+  width: 100%;
+  height: 135px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.viewTamagoContainer{
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.viewPimpHeading{
+  color: white;
+  position: absolute;
+  top:-40px;
+  right: 10px;
+}
+
+.tamagoImage{
+  width: 100px;
+  height: 100px;
+  border: 2px black solid;
+  border-radius: 15px;
+  margin: 10px;
+  background-image: url('/Assets/Images/egg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.CLASSIC{
+  color: white;
+  border-radius: 20px;
+  background-color: red;
+  margin: 8px;
+}
+
+.NONE{
+  display: none;
+}
+
+.ADVANCED{
+  color: white;
+  border-radius: 20px;
+  background-color: orange;
+  margin: 8px;
+}
+
+.LEGENDARY{
+  color: white;
+  border-radius: 20px;
+  background-color: rgb(2, 185, 2);
+  margin: 8px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.viewPaging{
+  position: absolute; 
+  background-color: var(--yellow) !important;
+  border: 0 !important;
+  color: black !important;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  top:-26px;
+  left: 30px;
+}
+
+.viewPaging2{
+  position: absolute; 
+  background-color: #0066ff !important;
+  border: 0 !important;
+  color: black !important;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  top:-26px;
+  left: 200px;
+}
+
+.flex{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.viewInnerDiv{
+  position: relative;
+  width: 60%;
+}
+
+.viewStakedSection{
+  padding-top: 30px;
+  position: relative;
+  margin-top: 20px;
+  border: 2px solid var(--pink);
+  border-radius: 15px;
+  height: 135px;
+}
+
+.viewPartsAndTamagoSection{
+  margin-top: 20px;
+  height: 460px;
+  display: flex;
+}
+
+.viewPartsSection{
+  padding-top: 30px;
+  position: relative;
+  border: 3px solid var(--yellow);
+  height: 150%;
+  width: 140%;
+  border-radius: 15px;
+  overflow-y: scroll;
+  white-space: nowrap;
+}
+
+.viewTamagoSection{
+  position: relative;
+  width: 45%;
+}
+
+.viewFinalTamagoContainer{
+  position: relative;
+  width: 100%;
+  height: 310px;
+}
+
+.viewAvailablePartsRow{
+  display: inline-flex;
+  width: 100%;
+}
+
+.randomEggHolder{
+  width: 200px;
+  border: 2px solid #fbe31c;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.partsArrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.viewAvailablePartsScroll{
+  overflow-x: scroll;
+  white-space: nowrap;
+  width: 90%;
+  scroll-behavior: smooth;
+}
+
+.traitAmountTxt{
+  position: relative;
+  margin-bottom: -20px;
+  padding: 5px 2px;
+  color:white;
+  background-color: #f2982a;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  z-index: 2;
+}
+
+.traitPrice{
+  position: relative;
+  margin: auto;
+  padding: 5px 2px;
+  color:white;
+  background-color: #f22a83;
+  border-radius: 50%;
+  width: auto;
+  height: 30px;
+  z-index: 2;
+}
